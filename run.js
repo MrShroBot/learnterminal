@@ -15,17 +15,22 @@ for(let i=0; i<16; i++){
     write('\n');
 }
 
-write(boxen(chalk.blue.bgGreen('Hello chalk'), {
+write("\x1B[1m")
+write(boxen(chalk.red.bgGreen('Hello chalk'), {
     padding: 1,
     margin:1
 }));
 
+
+write("\x1B[2m")
 write(boxen(chalk.magenta.bgGreen('Hello boxen'), {
     padding: 1,
     margin:1
 }));
 
-write(boxen(chalk.red.bgGreen('Bruh'), {
+
+write("\x1B[3m")
+write(boxen(chalk.cyan.bgGreen('Bruh'), {
     padding: 1,
     margin:1
 }));
