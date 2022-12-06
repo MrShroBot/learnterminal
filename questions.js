@@ -21,10 +21,10 @@ inquirer
         {type:"editor", name:"edit", message:"edit the message please"}
     ]) 
     .then((answer) =>{
-        if(answer.word === 'Bruh'||'bruh'){
-            console.log(`Yes, you can write Bruh`);
+        if(answer.word == 'Bruh'||answer.word == 'bruh'){
+            console.log(`Yes, you can write Bruh.`,"You wrote '"+answer.word+"'");
         } else {
-            console.log(`No, you cant write Bruh`);
+            console.log(`No, you cant write Bruh.`,"You wrote '"+answer.word+"'");
         };
 
         console.log(`You are ${answer.age} years old`);
@@ -54,7 +54,7 @@ inquirer
         };
 
         if(answer.pawrd == true){
-            console.log(`YES`)
+            console.log(`YES.`)
         } else {
             console.log(`ok... i understand`)
         };
